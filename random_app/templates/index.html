@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey Rev</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">    
+    <script src="{% static 'js/script.js' %}"></script>
+</head>
+<body>
+    <div id=header1>
+        <h1>Random Word Generator</h1>
+            <p>Multiple App</p>
+        </div>
+    <div id = "wrapper">
+        <div id = "all_data">
+            <h2>Random Word ( Attempt # {{request.session.count}} )</h2>
+            <div id = frame>
+            <h1>Random Word: {{request.session.word}}</h1>
+            </div>
+            <div id = button>
+            <button class = "button"><a href="random_word">Generate<a></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
